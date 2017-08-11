@@ -10,8 +10,8 @@ submit.onclick = function()
         list +='<li>+comments[i]+</li>';
         
     }
-    var comments_list=getElementById('comments_list');
-    comments_list.innerHTML=list;
+    var comments_list1=getElementById('comments_list');
+    comments_list1.innerHTML=list;
 };
 
 
