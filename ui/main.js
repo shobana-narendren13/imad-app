@@ -11,7 +11,9 @@ submit.onclick = function()
     }
     var ul=document.getElementById('comments_list');
     ul.innerHTML=list;
+    
+    var input_name=document.getElementById('comments');
+var comments=input_name.value;
 };
 
-var input_name=document.getElementById('comments');
-var comments=input_name.value;
+
