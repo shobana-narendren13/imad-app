@@ -10,7 +10,7 @@ submit.onclick = function()
         list +='<li>+comments1[i]+</li>';
         
     }
-    var comments_list1=getElementById('comments_list');
+    var comments_list1=document.getElementById('comments_list');
     comments_list1.innerHTML=list;
 };
 
