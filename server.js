@@ -11,7 +11,19 @@ app.get('/', function (req, res) {
 
 
 app.get('/page-one', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'page-one.html'));
+  //res.sendFile(path.join(__dirname, 'ui', 'page-one.html'));
+  res.send("Page one executed");
+  
+});
+app.get('/page-two', function (req, res) {
+  //res.sendFile(path.join(__dirname, 'ui', 'page-one.html'));
+  res.send("Page two executed");
+  
+});
+app.get('/page-three', function (req, res) {
+  //res.sendFile(path.join(__dirname, 'ui', 'page-one.html'));
+  res.send("Page three executed");
+  
 });
 
 
