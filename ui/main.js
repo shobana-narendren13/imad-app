@@ -3,7 +3,7 @@ var text=input_name.value;
 var submit=document.getElementById('submit_btn');
 submit.onclick = function()
 {
-    var comments=['comment1','comment2','comment3'];
+    var comments=['text1','text2','text3'];
     var list ='';
     for(var i=0; i<comments.length;i++)
     {
