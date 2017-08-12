@@ -29,6 +29,6 @@ submit.onclick = function()
 
 var input_name=document.getElementById('comments');
 var comments=input_name.value;
-request.open('GET','https://imad.hasura.io/submit-name?comments='+comments,true);
+request.open('GET','http://imad.hasura.io/submit-name?comments=' + comments,true);
 request.send(null);
 };
