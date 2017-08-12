@@ -15,12 +15,6 @@ app.get('/page-one', function (req, res) {
   
 });
 
-var comment = [];
-app.get('/submit-name', function (req,res){
-   var comments=req.query.comments;
-   comment.push(comments);
-   res.send(JSON.stringify(comment));
-});
 
 app.get('/page-two', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'page-two.html'));
@@ -45,6 +39,13 @@ app.get('/ui/style.css', function (req, res) {
 
 app.get('/ui/madi.png', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'madi.png'));
+});
+
+var comment = [];
+app.get('/submit-name', function (req,res){
+   var comments=req.query.comments;
+   comment.push(comments);
+   res.send(JSON.stringify(comment));
 });
 
 
