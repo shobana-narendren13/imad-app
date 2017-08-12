@@ -9,6 +9,12 @@ app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 
+app.get('/page-one', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'page-one.html'));
+  //res.send("Page one executed");
+  
+});
+
 var comment = [];
 app.get('/submit-name', function (req,res){
    var comments=req.query.comments;
@@ -16,11 +22,6 @@ app.get('/submit-name', function (req,res){
    res.send(JSON.stringify(comment));
 });
 
-app.get('/page-one', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'page-one.html'));
-  //res.send("Page one executed");
-  
-});
 app.get('/page-two', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'page-two.html'));
   //res.send("Page two executed");
