@@ -20,7 +20,7 @@ submit.onclick = function()
         
         
     }
-    list.toString();
+    
     var ul=document.getElementById('comments_list');
     ul.innerHTML=list;
     
@@ -32,6 +32,6 @@ submit.onclick = function()
 
 var input_name=document.getElementById('comments');
 var comments=input_name.value;
-request.open('GET','http://imad.hasura.io/submit-name?comments=' + comments,true);
-request.send(null);
+//request.open('GET','http://imad.hasura.io/submit-name?comments=' + comments,true);
+//request.send(null);
 
