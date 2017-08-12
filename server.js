@@ -31,6 +31,12 @@ app.get('/ui/main.js', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'main.js'));
 });
 
+var comment = [];
+app.get('/submit-name', function (req,res){
+   var comments=req.query.comments;
+   comment.push(comments);
+   res.send(JSON.stringify(comment));
+});
 
 app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
