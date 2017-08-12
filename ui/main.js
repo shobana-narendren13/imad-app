@@ -17,10 +17,10 @@ submit.onclick = function()
     for(var i=0; i<comment.length;i++)
     {
         list +='<li>'+comment[i]+'</li>';
-        comment[i].toString();
+        
         
     }
-    
+    comment.toString();
     var ul=document.getElementById('comments_list');
     ul.innerHTML=list;
     
