@@ -12,7 +12,7 @@ submit.onclick = function()
                 var comment=request.responseText;
                 comment=JSON.parse(comment);
            
-   // var comment=['comments1','comments2','comments3'];
+     comment=['comments1','comments2','comments3'];
     var list ='';
     for(var i=0; i<comment.length;i++)
     {
@@ -20,7 +20,7 @@ submit.onclick = function()
         
         
     }
-    comment.toString();
+    
     var ul=document.getElementById('comments_list');
     ul.innerHTML=list;
     
